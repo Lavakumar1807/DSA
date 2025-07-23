@@ -8,7 +8,9 @@ bool detectCycle(int node,vector<vector<int>>& adj,vector<int>& visited,vector<i
 
     for(auto adjacentNode : adj[node]){
         if(!visited[adjacentNode]){
-            if(detectCycle(adjacentNode,adj,visited,pathVisited)) return true;
+            if(detectCycle(adjacentNode,adj,visited,pathVisited)){
+                return true;
+            }
         }else if(pathVisited[adjacentNode]){
             return true;
         }

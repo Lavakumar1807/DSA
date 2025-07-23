@@ -6,12 +6,13 @@ using namespace std;
 bool detectCycle(int n,int s,vector<vector<int>>& adj){
     vector<int> visited(n,0);
     queue<pair<int,int>> q;
-    q.push({s,-1});
+    q.push({s,-1}); // {node,parent}
     visited[s] = 1;
 
     while(!q.empty()){
         int node = q.front().first;
         int parent = q.front().second;
+        q.pop();
 
         for(auto adjacentNode : adj[node]){
             if(!visited[adjacentNode]){

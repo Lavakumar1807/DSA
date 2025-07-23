@@ -1,3 +1,5 @@
+Recursion ==> Memoization ==> Tabulation ==> Space optimization
+
 It is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming.
 The idea is to simply store the results of subproblems so that we do not have to re-compute them when needed later. This simple optimization typically reduces time complexities from exponential to polynomial.
 There are two ways to store the results, one is top down (or memoization) and other is bottom up (or tabulation).
