@@ -9,7 +9,7 @@ class FenwickTree {
 public:
     FenwickTree(int size){
         this->size = size;
-        bit.resize(size+1, 0);
+        bit.resize(size+1, 0); // (1-based indexing)
     }
 
     void update(int index, int value){
