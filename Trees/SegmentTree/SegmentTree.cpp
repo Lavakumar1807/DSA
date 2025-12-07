@@ -2,7 +2,7 @@
 using namespace std;
 
 // Segment Tree – Range Sum Query & Point Update (0-Based Indexing)
-class SegmentTree{
+class SegmentTree {
     int size;
     vector<int> tree;
 public:
